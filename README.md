@@ -112,10 +112,10 @@ Usage
 #### Requirements
 * Coin daemon(s) (find the coin's repo and build latest version from source)
   * [List of Cryptonote coins](https://github.com/dvandal/cryptonote-nodejs-pool/wiki/Cryptonote-Coins)
-* [Node.js](http://nodejs.org/) v8.0+
+* [Node.js](http://nodejs.org/) v10.0+
   * For Ubuntu: 
  ```
-  curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash
+  curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash
   sudo apt-get install -y nodejs
 ```
 * [Redis](http://redis.io/) key-value store v3.0.2+ 
@@ -184,7 +184,7 @@ Explanation for each field:
 "coinDifficultyTarget": 150,
 
 /* Set daemon type. Supported values: default, forknote (Fix block height + 1), bytecoin (ByteCoin Wallet RPC API) */
-"daemonType": "default",
+"daemonType": "bytecoin",
 
 /* Set Cryptonight algorithm settings.
    Supported algorithms: chukwa (default). cryptonight_light and cryptonight_heavy
